@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # SPDX-FileCopyrightText: © 2023 Kanako Takahashi
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -7,11 +8,10 @@ from std_msgs.msg import Int16
 
 def cb(msg):
     global node
-    node.get_logger().info("Listen: %s" % msg.data)
+    node.get_logger().info("%dh %dm %ds" % (msg.data/3600, (msg.data%3600)/60, (msg.data%3600)%60))
 
 rclpy.init()
 node = Node("listener")
-pub = node.create_subscription(Int16, "countup", cb, 10)
-
+pub = node.create_subscription(Int16, "CountUp", cb, 10)
 rclpy.spin(node)
 
