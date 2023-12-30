@@ -1,5 +1,6 @@
 
 # mypkg
+[![test](https://github.com/kanako610/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/kanako610/mypkg/actions/workflows/test.yml)
 このリポジトリ―はロボットシステム学2023の講義内で扱ったコードファイルが入っているリポジトリ―です。
 このリポジトリ―を使うためにはパソコンにROS2がインストールされていないと使えません。
 
