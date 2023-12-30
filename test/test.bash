@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2023 Takahashi Kanako 
+# SPDX-FileCopyrightText: 2023 Kanako Takahashi 
 # SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
