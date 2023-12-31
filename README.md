@@ -8,11 +8,11 @@
 
 1.使っている環境のROS2のワークスペース以下のコードを入力してコードをダウンロードします。
 ```
-$ git clone https://github.com/kanako610/mypkg
+$ git clone https://github.com/kanako610/mypkg.git
 ```
 または
 ```
-$ git clone git@github.com:kanako610/mypkg
+$ git clone git@github.com:kanako610/mypkg.git
 ```
 2．ROS2のワークスペースで以下のコマンドを実行します。
 ```
