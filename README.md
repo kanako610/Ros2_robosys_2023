@@ -24,28 +24,26 @@ $ source ~/.bashrc
 ```
 
 # 機能
-・talker.pyで1ずつ加算されていくself.nをlistener.pyで表示する。
-### ノード
-Talker
+・talker.pyで1ずつ加算されていくメッセージをlistener.pyで表示する。
+## ノード
+### talker
 システムの起動からの経過時間を秒単位で記録し、その情報を送信する機能を持つエンティティです。
 
-Listener
+### listener
 Talkerから受け取った時間情報をそれを時間と分、秒に変換してログに出力するシステムです。
 
 ### トピック
-CountUpという0.5秒ごとに１から1ずつ増やしていくというトピックを使って通信をしています。
+countupという0.5秒ごとに0から1ずつ増やしていくというトピックを使って通信をしています。
 
 # 実行方法と実行例
 実行方法は以下２つあります。
 ## １つ目
 それぞれのROS2の環境のターミナルに以下のコードを打ちこみます。この時にtalkerは何も表示されません。
 ```
-$ cd ros2_ws
 $ ros2 run mypkg talker
 ```
 次に２つ目のターミナルを作って以下のコードを打ち込みます。
 ```
-$ cd ros2_ws
 $ ros2 run mypkg listener
 ```
 すると２つ目のターミナル（listenerを実行したターミナル）に以下のように表示されます。
@@ -64,7 +62,6 @@ $ ros2 run mypkg listener
 ## ２つ目
 それぞれのROS2の環境のターミナルに以下のコードを打ちこみます。
 ```
-$ cd ros2_ws
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 すると以下のような実行結果表示されます。
