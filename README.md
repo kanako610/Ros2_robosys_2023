@@ -68,7 +68,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 # テスト環境
 
 * Ubuntu20.04
-
+* Ubuntu 22.04.3 LTS
 
 
 # ライセンス
